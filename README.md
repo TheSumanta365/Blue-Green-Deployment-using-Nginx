@@ -7,11 +7,12 @@ This is a sample project demonstrating how to perform Blue-Green Deployment loca
 ### Step 1: Build both app images
 
 ```bash
-docker build -t blue-app ./app_blue
-docker build -t green-app ./app_green
+docker build -t blue-app ./blue-app
+docker build -t green-app ./green-app
 Step 2: Start the services
 
-docker-compose up -d
+
+docker-compose up -d #starts all the containers simultaneously
 Step 3: Visit
 Open your browser and go to: http://localhost
 
